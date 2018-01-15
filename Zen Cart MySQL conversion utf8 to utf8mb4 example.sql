@@ -5,18 +5,18 @@ ALTER TABLE address_format CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unic
 ALTER TABLE admin CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
 ALTER TABLE admin_activity_log CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
 
-ALTER TABLE admin_menus CHANGE `menu_key` `menu_key` VARCHAR(249) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
-ALTER TABLE admin_menus CHANGE `language_key` `language_key` VARCHAR(249) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
+ALTER TABLE admin_menus CHANGE `menu_key` `menu_key` VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
+ALTER TABLE admin_menus CHANGE `language_key` `language_key` VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
 ALTER TABLE admin_menus CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
 
-ALTER TABLE admin_pages CHANGE `page_key` `page_key` VARCHAR(249) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
-ALTER TABLE admin_pages CHANGE `language_key` `language_key` VARCHAR(249) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
-ALTER TABLE admin_pages CHANGE `main_page` `main_page` VARCHAR(249)CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
-ALTER TABLE admin_pages CHANGE `page_params` `page_params` VARCHAR(249) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
-ALTER TABLE admin_pages CHANGE `menu_key` `menu_key` VARCHAR(249) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
+ALTER TABLE admin_pages CHANGE `page_key` `page_key` VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
+ALTER TABLE admin_pages CHANGE `language_key` `language_key` VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
+ALTER TABLE admin_pages CHANGE `main_page` `main_page` VARCHAR(191)CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
+ALTER TABLE admin_pages CHANGE `page_params` `page_params` VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
+ALTER TABLE admin_pages CHANGE `menu_key` `menu_key` VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
 ALTER TABLE admin_pages CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
 
-ALTER TABLE admin_pages_to_profiles CHANGE `page_key` `page_key` VARCHAR(249) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
+ALTER TABLE admin_pages_to_profiles CHANGE `page_key` `page_key` VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
 ALTER TABLE admin_pages_to_profiles CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
 
 ALTER TABLE admin_profiles CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
@@ -26,7 +26,7 @@ ALTER TABLE banners_history CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_uni
 ALTER TABLE categories CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
 ALTER TABLE categories_description CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
 
-ALTER TABLE configuration CHANGE `configuration_key` `configuration_key` VARCHAR(240) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
+ALTER TABLE configuration CHANGE `configuration_key` `configuration_key` VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
 ALTER TABLE configuration CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
 
 ALTER TABLE configuration_group CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
@@ -52,7 +52,7 @@ ALTER TABLE featured CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_52
 ALTER TABLE files_uploaded CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
 ALTER TABLE geo_zones CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
 
-ALTER TABLE get_terms_to_filter CHANGE `get_term_name` `get_term_name` VARCHAR(249) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
+ALTER TABLE get_terms_to_filter CHANGE `get_term_name` `get_term_name` VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
 ALTER TABLE get_terms_to_filter CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
 
 ALTER TABLE group_pricing CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
@@ -82,7 +82,7 @@ ALTER TABLE paypal_session CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unic
 ALTER TABLE paypal_testing CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
 ALTER TABLE product_music_extra CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
 
-ALTER TABLE product_type_layout CHANGE `configuration_key` `configuration_key` VARCHAR(240) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
+ALTER TABLE product_type_layout CHANGE `configuration_key` `configuration_key` VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
 ALTER TABLE product_type_layout CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
 
 ALTER TABLE product_types CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
@@ -109,7 +109,7 @@ ALTER TABLE reviews CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520
 ALTER TABLE reviews_description CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
 ALTER TABLE salemaker_sales CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
 
-ALTER TABLE sessions CHANGE `sesskey` `sesskey` VARCHAR(249) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
+ALTER TABLE sessions CHANGE `sesskey` `sesskey` VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '';
 ALTER TABLE sessions CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
 
 ALTER TABLE specials CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
